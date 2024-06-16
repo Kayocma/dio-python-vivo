@@ -1,5 +1,5 @@
 import textwrap
-from abc import ABC, abstractmethod, abstractproperty
+from abc import ABC, abstractmethod
 from datetime import datetime
 
 class User:
@@ -124,7 +124,6 @@ class History:
 
 class Transaction(ABC):
     @property
-    @abstractproperty
     def value(self):
         pass
 
